@@ -45,7 +45,7 @@ export default function NameForm() {
       </form>
 
       {fullName && (
-        <p className="mt-4 text-lg font-bold">Full Name Display: {fullName}</p>
+        <p className="mt-4 text-lg font-bold">Full Name : {fullName}</p>
       )}
     </div>
   );
