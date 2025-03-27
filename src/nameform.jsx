@@ -15,6 +15,8 @@ export default function NameForm() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md w-80">
+        
+    <div><h1>Full Name Display</h1></div>
         <label htmlFor="firstName" className="block mb-2 font-medium">
           First Name:
         </label>
@@ -26,6 +28,7 @@ export default function NameForm() {
           className="w-full p-2 border rounded mb-3"
           required
         />
+        <br/>
 
         <label htmlFor="lastName" className="block mb-2 font-medium">
           Last Name:
@@ -38,6 +41,7 @@ export default function NameForm() {
           className="w-full p-2 border rounded mb-3"
           required
         />
+        <br/>
 
         <button type="submit" className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600">
           Submit
