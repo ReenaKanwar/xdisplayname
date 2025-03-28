@@ -1,13 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
 export default function NameForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [fullName, setFullName] = useState("");
-
-  useEffect(() => {
-    setFullName(`${firstName.trim()} ${lastName.trim()}`);
-  }, [firstName, lastName]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -53,7 +49,7 @@ export default function NameForm() {
         </button>
       </form>
 
-      {fullName.trim() && (
+      {fullName && (
         <p className="mt-4 text-lg font-bold">Full Name: {fullName}</p>
       )}
     </div>
